@@ -10,7 +10,6 @@ import {LogInSchema} from "../../Schemas/LogInSchema/LogInSchema";
 import FormErrorText from "../../component/FormErrorText/FormErrorText";
 import FormFooter from "../../component/FormFooter/FormFooter";
 import FormTitle from "../../component/FormTitle/FormTitle";
-import CustomButton from "../../component/CustomButton/CustomButton";
 import PictureForScreenMaker from "../../component/PictureForScreenMaker/PictureForScreenMaker";
 
 export default function LoginPage() {
@@ -84,14 +83,13 @@ export default function LoginPage() {
                                 </div>
                                 {errors.password && touched.password && (
                                     <FormErrorText class="error-text-password" text={errors.password}/>)}
-                                <CustomButton
-                                    divClass={"button-wrapper"}
-                                    action1={!isValid}
-                                    classAction1={"button-submit-error"}
-                                    classAction2={"button-submit"}
-                                    type={"submit"}
-                                    text={"LOG IN"}
-                                />
+                                <div className="button-wrapper">
+                                    <button
+                                        className={(!isValid) ? "button-submit-error" : "button-submit"}
+                                        type="submit"
+                                    >LOG IN
+                                    </button>
+                                </div>
                                 <div className="forgot-password-login">
                                     <a href="#">Forgot your password?</a>
                                 </div>
