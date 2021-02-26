@@ -1,0 +1,18 @@
+.login-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.form-footer-login {
+    color: #bababa;
+    padding-right: 10px;
+}
+
+.login-footer a {
+    cursor: pointer;
+    color: #4285F4;
+}

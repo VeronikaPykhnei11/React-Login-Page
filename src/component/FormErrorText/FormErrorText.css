@@ -1,0 +1,12 @@
+.error-text-email, .error-text-password {
+    margin-top: 3px;
+    color: #F4604D;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: left;
+    margin-bottom: -10px;
+    margin-left: 15px;
+}
